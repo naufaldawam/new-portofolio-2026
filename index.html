@@ -1,221 +1,449 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Naufal Dawam — Software Developer</title>
-  <meta name="description" content="Naufal Dawam Dzikrilah — Software Developer portfolio">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naufal Dawam | Interactive Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="intro" id="intro">
-    <div class="intro-mark">ND</div>
-    <div class="intro-name">NAUFAL<br>DAWAM</div>
-    <div class="intro-line"></div>
-  </div>
-
-  <div class="page-shell">
-    <aside class="sidebar">
-      <a class="brand" href="#home"><b>NAUFAL</b><span>PORTFOLIO</span></a>
-      <div class="side-bottom"><span>SOFTWARE<br>DEVELOPER</span><span>2026</span></div>
-    </aside>
-
-    <header class="topbar">
-      <div class="nav-left">
-        <button class="menu-button" id="menuButton">MENU</button>
-        <nav id="navLinks">
-          <a class="active" href="#home">01&nbsp; HOME</a>
-          <a href="#about">02&nbsp; ABOUT</a>
-          <a href="#skills">03&nbsp; SKILLS</a>
-          <a href="#journey">04&nbsp; JOURNEY</a>
-          <a href="#services">05&nbsp; SERVICES</a>
-          <a href="#portfolio">06&nbsp; WORK</a>
-          <a href="#contact">07&nbsp; CONTACT</a>
-        </nav>
-      </div>
-      <div class="top-status">AVAILABLE FOR<br><span>SELECTED WORK</span></div>
-      <a class="top-mail" href="mailto:naufal.dawam.dz@gmail.com">naufal.dawam.dz@gmail.com ↗</a>
-    </header>
-
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-main">
-          <div class="hero-person">
-            <img src="https://ik.imagekit.io/naufal/no-bg-naufal-pp_iilI0zX9B.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673835338159" alt="Naufal Dawam">
-            <span class="person-note">HELLO<br>THERE →</span>
-          </div>
-          <div class="hero-copy">
-            <p class="micro">SOFTWARE DEVELOPER / INDONESIA</p>
-            <h1>Hi, I'm<br><em>Naufal.</em></h1>
-            <h2>Software Developer</h2>
-            <p class="hero-description">I'm a Software Developer with more than 1 years experience with a friendly dicipline and hard work, I like learn something new especialy about software development.</p>
-            <div class="hero-actions">
-              <a href="#portfolio">Explore work ↓</a>
-              <a href="https://drive.google.com/file/d/1WXPLWALPBIn45oooKFmN28oNy3QWe8AU/view?usp=sharing" target="_blank" rel="noopener">Download CV ↗</a>
-            </div>
-          </div>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-text line-1" data-text="NAUFAL">NAUFAL</h1>
+            <h1 class="preloader-text line-2" data-text="DAWAM">DAWAM</h1>
+            <h1 class="preloader-text line-3" data-text="DZIKRILLAH">DZIKRILLAH</h1>
         </div>
-        <div class="hero-footer">
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/naufal-dawam-dzikrillah-920168170/" target="_blank" rel="noopener">LI</a>
-            <a href="https://www.instagram.com/naufalddz/" target="_blank" rel="noopener">IG</a>
-            <a href="https://github.com/naufaldawam" target="_blank" rel="noopener">GH</a>
-          </div>
-          <div>SCROLL TO DISCOVER ↓</div>
-          <div>JAKARTA / WEST JAVA</div>
-        </div>
-      </section>
-
-      <section class="about section" id="about">
-        <div class="section-number">02</div>
-        <div class="section-heading"><span>ABOUT ME</span><span>MY INTRODUCTION</span></div>
-        <div class="about-grid">
-          <div class="about-image"><img src="https://ik.imagekit.io/naufal/no-bg-naufal-pp_iilI0zX9B.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673835338159" alt="Naufal portrait"></div>
-          <div class="about-copy">
-            <h2>Responsible for the work given.<br><em>Curious by nature.</em></h2>
-            <p class="lead">Responsible for the work given, Has high curiosity, eager to learn new skills and competencies.</p>
-            <div class="stats">
-              <div><strong>01+</strong><span>Years<br>experiences</span></div>
-              <div><strong>03+</strong><span>Completed<br>projects</span></div>
-              <div><strong>03+</strong><span>Companies<br>worked</span></div>
-            </div>
-            <a class="line-link" href="https://drive.google.com/file/d/1WXPLWALPBIn45oooKFmN28oNy3QWe8AU/view?usp=sharing" target="_blank" rel="noopener">DOWNLOAD CV ↗</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills section" id="skills">
-        <div class="section-number">03</div>
-        <div class="section-heading"><span>SKILLS</span><span>MY TECHNICAL SKILL</span></div>
-        <div class="skills-grid">
-          <article class="skill-group open">
-            <button class="skill-head">
-              <span class="skill-index">01</span><span class="skill-title">Frontend Developer</span><span class="skill-subtitle">More than 1 year</span><span class="plus">＋</span>
-            </button>
-            <div class="skill-body">
-              <div class="skill-row"><span>HTML</span><b>70%</b><i><span style="width:70%"></span></i></div>
-              <div class="skill-row"><span>CSS</span><b>50%</b><i><span style="width:50%"></span></i></div>
-              <div class="skill-row"><span>JavaScript</span><b>50%</b><i><span style="width:50%"></span></i></div>
-              <div class="skill-row"><span>React JS</span><b>50%</b><i><span style="width:50%"></span></i></div>
-            </div>
-          </article>
-          <article class="skill-group">
-            <button class="skill-head">
-              <span class="skill-index">02</span><span class="skill-title">Backend Developer</span><span class="skill-subtitle">More than 1 years</span><span class="plus">＋</span>
-            </button>
-            <div class="skill-body">
-              <div class="skill-row"><span>Java</span><b>50%</b><i><span style="width:50%"></span></i></div>
-              <div class="skill-row"><span>PHP</span><b>45%</b><i><span style="width:45%"></span></i></div>
-              <div class="skill-row"><span>SQL</span><b>50%</b><i><span style="width:50%"></span></i></div>
-              <div class="skill-row"><span>GO</span><b>45%</b><i><span style="width:45%"></span></i></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="journey section dark" id="journey">
-        <div class="section-number">04</div>
-        <div class="section-heading"><span>QUALIFICATION</span><span>MY PERSONAL JOURNEY</span></div>
-        <div class="journey-tabs">
-          <button class="journey-tab active" data-target="education">EDUCATION</button>
-          <button class="journey-tab" data-target="work">WORK</button>
-        </div>
-        <div class="timeline active" id="education">
-          <article><span class="year">2015 — 2018</span><div><h3>Computer and Network Engineering</h3><p>SMK INFORMATIKA YASMA</p></div></article>
-          <article><span class="year">2013 — 2015</span><div><h3>MTS NURUL HIDAYAH</h3></div></article>
-          <article><span class="year">2005 — 2012</span><div><h3>SD Negeri 013 Pagi</h3></div></article>
-        </div>
-        <div class="timeline" id="work">
-          <article><span class="year">November 2023 — Now</span><div><h3>Java Programmer</h3><p>PT. Bank DKI</p></div></article>
-          <article><span class="year">August 2022 — Okt 2023</span><div><h3>IT Support</h3><p>PT. Polaris Edu Partners</p></div></article>
-          <article><span class="year">August 2020 — Desember 2021</span><div><h3>Technical Enggineer</h3><p>CV. Cipta Indah Karya Sportindo</p></div></article>
-          <article><span class="year">June 2020 — July 2020</span><div><h3>Technical Writer</h3><p>PT. Padepokan Tujuh Sembilan</p></div></article>
-          <article><span class="year">Jan 2020 — Jun 2020</span><div><h3>Intern Front-end Developper</h3><p>PT. Global Media Visual (Mola.Tv)</p></div></article>
-        </div>
-      </section>
-
-      <section class="services section" id="services">
-        <div class="section-number">05</div>
-        <div class="section-heading"><span>SERVICES</span><span>WHAT I OFFER</span></div>
-        <div class="service-grid">
-          <article class="service-card"><span class="service-index">01</span><h2>Backend<br><em>Developer</em></h2><button class="more-button" data-service="backend">View more ↗</button></article>
-          <article class="service-card"><span class="service-index">02</span><h2>Frontend<br><em>Developer</em></h2><button class="more-button" data-service="frontend">View more ↗</button></article>
-        </div>
-      </section>
-
-      <section class="portfolio section" id="portfolio">
-        <div class="section-number">06</div>
-        <div class="section-heading"><span>PORTFOLIO</span><span>MOST RECENT WORK</span></div>
-        <div class="portfolio-list">
-          <article class="portfolio-item">
-            <div class="portfolio-meta"><span>01</span><span>WEBVIEW / PAYMENT</span></div>
-            <div class="portfolio-media"><img src="https://ik.imagekit.io/naufal/update_cv/mrt_proj_k4ILUGz6U.png?updatedAt=1718071722975" alt="Webview Martipay"></div>
-            <div class="portfolio-info"><h2>Webview Martipay</h2><p>Webview For Link Bank DKI as A Payment In Application Martipay</p><a href="https://play.google.com/store/search?q=my%20mrtj&c=apps&hl=id" target="_blank" rel="noopener">Click Here For a Demo ↗</a></div>
-          </article>
-          <article class="portfolio-item">
-            <div class="portfolio-meta"><span>02</span><span>PAYMENT / ZISWAF</span></div>
-            <div class="portfolio-media"><img src="https://ik.imagekit.io/naufal/update_cv/bdki_syar_proj_Z5s66g3BW.png?updatedAt=1718071717509" alt="Payment Method ZISWAF"></div>
-            <div class="portfolio-info"><h2>Payment Method ZISWAF</h2><p>Create a Payment Gateway/Payment Method For ZISWAF Bank DKI Syariah</p><a href="https://jakone.mobi/jakone-blog/jakone-zakatfitrah20" target="_blank" rel="noopener">Click Here For a Demo ↗</a></div>
-          </article>
-          <article class="portfolio-item">
-            <div class="portfolio-meta"><span>03</span><span>INTERNAL / DASHBOARD</span></div>
-            <div class="portfolio-media"><img src="https://ik.imagekit.io/naufal/update_cv/mola_proj_JZ43D4_pa.png?updatedAt=1718071718786" alt="Dashboard Mola.Tv"></div>
-            <div class="portfolio-info"><h2>Dashboard Mola.Tv</h2><p>Creating responsive website version Mola tv, and create guestbook for internal apps</p><a href="https://www.google.com" target="_blank" rel="noopener">Click Here For a Demo ↗</a></div>
-          </article>
-          <article class="portfolio-item">
-            <div class="portfolio-meta"><span>04</span><span>LANDING PAGE</span></div>
-            <div class="portfolio-media"><img src="https://ik.imagekit.io/naufal/update_cv/ciks_proj_v0atbTHAc.png?updatedAt=1718071718727" alt="Simple Landing Page"></div>
-            <div class="portfolio-info"><h2>Simple Landing Page</h2><p>Simple landing page for company website.</p><a href="https://webciks-v2-fix.vercel.app" target="_blank" rel="noopener">Click Here For a Demo ↗</a></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section dark" id="contact">
-        <div class="section-number">07</div>
-        <div class="section-heading"><span>CONTACT ME</span><span>GET IN TOUCH</span></div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <a href="https://wa.me/6281283566949" target="_blank" rel="noopener"><span>WHATSAPP</span><strong>0812-8356-6949</strong></a>
-            <a href="mailto:naufal.dawam.dz@gmail.com"><span>EMAIL</span><strong>naufal.dawam.dz@gmail.com</strong></a>
-            <div><span>LOCATION</span><strong>South Jakarta - West Java</strong></div>
-          </div>
-          <form id="contactForm">
-            <label>Name<input id="name" required></label>
-            <label>Email<input id="email" type="email" required></label>
-            <label>Project<input id="project" required></label>
-            <label>Message<textarea id="message" required></textarea></label>
-            <button type="submit">SEND MESSAGE ↗</button>
-          </form>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer-top"><span>NAUFAL DAWAM</span><span>SOFTWARE DEVELOPER</span><span>© 2026</span></div>
-        <div class="footer-bottom">
-          <div class="footer-name">LET'S<br><em>CONNECT.</em></div>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/naufal.manar" target="_blank" rel="noopener">FACEBOOK ↗</a>
-            <a href="https://www.instagram.com/naufalddz/" target="_blank" rel="noopener">INSTAGRAM ↗</a>
-            <a href="https://www.linkedin.com/in/naufal-dawam-dzikrillah-920168170/" target="_blank" rel="noopener">LINKEDIN ↗</a>
-            <a href="https://github.com/naufaldawam" target="_blank" rel="noopener">GITHUB ↗</a>
-          </div>
-        </div>
-        <p class="footer-copy">© Naufal Dawam. All right reserved</p>
-      </footer>
-    </main>
-  </div>
-
-  <div class="service-modal" id="serviceModal">
-    <div class="modal-box">
-      <button id="closeModal">×</button>
-      <p>SERVICE</p><h2 id="modalTitle"></h2><ul id="modalList"></ul>
+        <div class="preloader-bar"></div>
     </div>
-  </div>
-  <div class="cursor" id="cursor"></div>
-  <div class="toast" id="toast"></div>
-  <script src="script.js"></script>
+
+    <!-- Interactive Background (Particles) -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Naufal ddz<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2500">
+            <h3>Hello, Class Unindra! I am</h3>
+            <h1>Naufal Dawam Dzikrilah</h1>
+            <h2 class="typing-container">I'm a <span class="typed-text"></span></h2>
+            <p>Software developer with more than one year of experience in developing digital solutions. I am passionate
+                about tackling challenges, continuously learning new technologies, and improving my technical skills.
+                With a disciplined and hardworking mindset, I strive to build reliable, efficient, and effective
+                software solutions.
+            </p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn btn-primary">Lihat Karya Saya</a>
+                <a href="https://wa.me/6281283566949" target="_blank" class="btn btn-secondary">Mari Berbincang</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/naufaldawam" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/naufal-dawam-dzikrillah-920168170/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/naufalddz/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Fun Interactive Element -->
+        <div class="interactive-object" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2800">
+            <img src="https://ik.imagekit.io/naufal/no-bg-naufal-pp_iilI0zX9B.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673835338159"
+                alt="Naufal" class="profile-img">
+            <div class="glow-ring"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title" data-aos="fade-up">Beyond the <span>Code</span></h2>
+        <div class="about-container">
+            <div class="about-stats" data-aos="fade-right">
+                <div class="stat-box" data-tilt data-tilt-scale="1.1">
+                    <h3>04+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box" data-tilt data-tilt-scale="1.1">
+                    <h3>10+</h3>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="stat-box" data-tilt data-tilt-scale="1.1">
+                    <h3>03+</h3>
+                    <p>Companies Worked</p>
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <p>I take responsibility for the work entrusted to me, have a strong sense of curiosity, and am
+                    passionate about continuously learning new skills and developing my competencies in software
+                    development.
+                </p>
+                <a href="https://drive.google.com/file/d/1WXPLWALPBIn45oooKFmN28oNy3QWe8AU/view?usp=sharing"
+                    target="_blank" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title" data-aos="fade-up">Tech <span>Arsenal</span></h2>
+        <div class="skills-wrapper">
+            <!-- Backend -->
+            <div class="skill-category glass-card" data-aos="flip-left">
+                <div class="skill-head">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Developer</h3>
+                </div>
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info"><span>Java Spring-boot</span><span>80%</span></div>
+                        <div class="progress-line"><span style="width: 80%"></span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><span>Dotnet</span><span>70%</span></div>
+                        <div class="progress-line"><span style="width: 70%"></span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><span>LARAVEL</span><span>50%</span></div>
+                        <div class="progress-line"><span style="width: 50%"></span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><span>GIN</span><span>45%</span></div>
+                        <div class="progress-line"><span style="width: 45%"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category glass-card" data-aos="flip-right" data-aos-delay="200">
+                <div class="skill-head">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Developer</h3>
+                </div>
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info"><span>React JS</span><span>70%</span></div>
+                        <div class="progress-line"><span style="width: 70%"></span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><span>Next JS</span><span>80%</span></div>
+                        <div class="progress-line"><span style="width: 80%"></span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><span>Vue JS</span><span>60%</span></div>
+                        <div class="progress-line"><span style="width: 60%"></span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><span>Flutter</span><span>50%</span></div>
+                        <div class="progress-line"><span style="width: 50%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section (Timeline) -->
+    <section id="journey" class="journey">
+        <h2 class="section-title" data-aos="fade-up">My <span>Journey</span></h2>
+        <div class="timeline">
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content glass-card">
+                    <span class="date">Des 2024 - Present</span>
+                    <h3>Backend Developer</h3>
+                    <p>PT. PLN Icon Plus</p>
+                    <i class="fas fa-briefcase icon"></i>
+                </div>
+            </div>
+            <!-- Work 1 -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content glass-card">
+                    <span class="date">Nov 2023 - Des 2024</span>
+                    <h3>Java Programmer</h3>
+                    <p>PT. Bank DKI / PT. Bank Jakarta</p>
+                    <i class="fas fa-briefcase icon"></i>
+                </div>
+            </div>
+            <!-- Work 2 -->
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content glass-card">
+                    <span class="date">Aug 2022 - Oct 2023</span>
+                    <h3>IT Support</h3>
+                    <p>PT. Polaris Edu Partners</p>
+                    <i class="fas fa-briefcase icon"></i>
+                </div>
+            </div>
+            <!-- Work 3 -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content glass-card">
+                    <span class="date">Aug 2020 - Dec 2021</span>
+                    <h3>Technical Engineer</h3>
+                    <p>CV. Cipta Indah Karya Sportindo</p>
+                    <i class="fas fa-briefcase icon"></i>
+                </div>
+            </div>
+            <!-- Edu 1 -->
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content glass-card">
+                    <span class="date">2015 - 2018</span>
+                    <h3>Computer and Network Engineering</h3>
+                    <p>SMK Informatika YASMA</p>
+                    <i class="fas fa-graduation-cap icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title" data-aos="fade-up">Featured <span>Works</span></h2>
+
+        <!-- Scrolling Wrapper -->
+        <div class="portfolio-grid" data-aos="fade-up">
+
+            <!-- Project 1 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-info" style="padding-top: 10px;">
+                    <span class="date"
+                        style="display:inline-block; padding: 4px 12px; background: rgba(16, 185, 129, 0.2); color: #10b981; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Go
+                        Live</span>
+                    <h3>Integrasi AI MKRI</h3>
+                    <p>Integrasi untuk client Mahkamah Konstitusi Republik Indonesia (MKRI).</p>
+                    <a href="https://ai.mkri.id/ai-page-publik" target="_blank" class="btn btn-outline">Visit <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-info" style="padding-top: 10px;">
+                    <span class="date"
+                        style="display:inline-block; padding: 4px 12px; background: rgba(14, 165, 233, 0.2); color: var(--primary-color); border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Staging
+                        User</span>
+                    <h3>Sales Order iProm PNRE</h3>
+                    <p>Sales order iProm Pertamina New and Renewable Energy (PNRE/PPI).</p>
+                    <a href="https://dev-ppi-iprom.air.id/" target="_blank" class="btn btn-outline">Visit <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-info" style="padding-top: 10px;">
+                    <span class="date"
+                        style="display:inline-block; padding: 4px 12px; background: rgba(14, 165, 233, 0.2); color: var(--primary-color); border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Staging
+                        User</span>
+                    <h3>MCU Dashboard PNRE</h3>
+                    <p>MCU dashboard Pertamina New and Renewable Energy (PNRE/PPI).</p>
+                    <a href="https://dev-ppi-mcu.air.id/" target="_blank" class="btn btn-outline">Visit <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-info" style="padding-top: 10px;">
+                    <span class="date"
+                        style="display:inline-block; padding: 4px 12px; background: rgba(16, 185, 129, 0.2); color: #10b981; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Go
+                        Live</span>
+                    <h3>Fitur EDRT JMRB</h3>
+                    <p>Penambahan fitur EDRT pada dashboard E-Procurement Jasa Marga Related Business (JMRB).</p>
+                    <a href="https://eproc.jmrb.co.id/" target="_blank" class="btn btn-outline">Visit <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-info" style="padding-top: 10px;">
+                    <span class="date"
+                        style="display:inline-block; padding: 4px 12px; background: rgba(245, 158, 11, 0.2); color: #f59e0b; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">On
+                        Development</span>
+                    <h3>Pencatatan BBM PNRE</h3>
+                    <p>Pencatatan penggunaan BBM untuk seluruh karyawan Pertamina New and Renewable Energy (PNRE/PPI).
+                    </p>
+                    <a href="https://ppi-fm.air.id/login" target="_blank" class="btn btn-outline">Visit <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-img">
+                    <!-- note untuk diri sendiri, oneerror -->
+                    <img src="https://ik.imagekit.io/naufal/update_cv/mrt_proj_k4ILUGz6U.png?updatedAt=1718071722975"
+                        alt="Martipay"
+                        onerror="this.src='https://ik.imagekit.io/naufal/update_cv/mrt_proj_k4ILUGz6U.png?updatedAt=1718071722975'">
+                </div>
+                <div class="card-info">
+                    <h3>Webview Martipay</h3>
+                    <p>Webview for Link Bank DKI as a payment in Application Martipay. Status terakhir: Go Live pada
+                        aplikasi MyMRTJ.</p>
+                    <a href="https://play.google.com/store/search?q=my%20mrtj&c=apps&hl=id" target="_blank"
+                        class="btn btn-outline">Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-img">
+                    <img src="https://ik.imagekit.io/naufal/update_cv/bdki_syar_proj_Z5s66g3BW.png?updatedAt=1718071717509"
+                        alt="ZISWAF"
+                        onerror="this.src='https://ik.imagekit.io/naufal/update_cv/bdki_syar_proj_Z5s66g3BW.png?updatedAt=1718071717509'">
+                </div>
+                <div class="card-info">
+                    <h3>Payment Method ZISWAF</h3>
+                    <p>Create a Payment Gateway/Payment Method for ZISWAF Bank DKI Syariah. Status terakhir: On Hold,
+                        menunggu pengecekan Bank Indonesia.</p>
+                    <a href="https://jakone.mobi/jakone-blog/jakone-zakatfitrah20" target="_blank"
+                        class="btn btn-outline">Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-img">
+                    <img src="https://ik.imagekit.io/naufal/update_cv/mola_proj_JZ43D4_pa.png?updatedAt=1718071718786"
+                        alt="Mola Tv"
+                        onerror="this.src='https://ik.imagekit.io/naufal/update_cv/mola_proj_JZ43D4_pa.png?updatedAt=1718071718786'">
+                </div>
+                <div class="card-info">
+                    <h3>Dashboard Mola.Tv</h3>
+                    <p>Creating responsive website version Mola TV, and guestbook for internal apps. Status terakhir:
+                        Enhancement dan Go Live.</p>
+                    <a href="https://www.google.com" target="_blank" class="btn btn-outline">Demo <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="card-img">
+                    <img src="https://ik.imagekit.io/naufal/update_cv/ciks_proj_v0atbTHAc.png?updatedAt=1718071718727"
+                        alt="CV Cipta"
+                        onerror="this.src='https://ik.imagekit.io/naufal/update_cv/ciks_proj_v0atbTHAc.png?updatedAt=1718071718727'">
+                </div>
+                <div class="card-info">
+                    <h3>Simple Landing Page</h3>
+                    <p>Simple landing page for company CV. Cipta Indah Karya Sportindo. Status terakhir: Go Live.</p>
+                    <a href="https://webciks-v2-fix.vercel.app" target="_blank" class="btn btn-outline">Demo <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-aos="fade-up">Let's <span>Connect</span></h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="info-item glass-card" data-tilt>
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>0812-8356-6949</p>
+                    </div>
+                </div>
+                <div class="info-item glass-card" data-tilt>
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>naufal.dawam.dz@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item glass-card" data-tilt>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>South Jakarta - West Java</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form glass-card" data-aos="fade-left">
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" id="project" placeholder="Subject / Project Name">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Naufal Dawam</h2>
+            <p>Software Developer building interactive digital experiences.</p>
+            <div class="social-links">
+                <a href="https://github.com/naufaldawam" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/naufal-dawam-dzikrillah-920168170/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Naufal Dawam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Modal for Success Message -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-box glass-card">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I will get back to you shortly.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Awesome!</button>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
