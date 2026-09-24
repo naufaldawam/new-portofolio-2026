@@ -26,7 +26,6 @@ Proyek ini dibangun menggunakan teknologi web standar dan diperkaya dengan beber
 - `index.html` : Berisi struktur kerangka halaman utama portofolio.
 - `style.css`  : Berisi seluruh styling, variabel warna, efek kaca, dan responsivitas perangkat.
 - `script.js`  : Berisi logika interaksi, konfigurasi *Particles.js*, *Typed.js*, dan integrasi *EmailJS*.
-- `images/`    : Direktori penyimpanan aset gambar atau *screenshot* proyek.
 
 ---
 ## Cara Deploy ke GitHub Pages
