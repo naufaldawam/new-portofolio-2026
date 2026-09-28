@@ -449,6 +449,39 @@
         </div>
     </section>
 
+    <!-- Portfolio AI Assistant / CHATBOT -->
+    <button id="aiOrb" class="ai-orb" type="button" aria-label="Open Naufal AI">
+        <span class="ai-orb-core"><i class="fas fa-sparkles"></i></span>
+        <span class="ai-orb-label">Naufal AI</span>
+    </button>
+
+    <div id="aiBackdrop" class="ai-backdrop"></div>
+    <aside id="aiPanel" class="ai-panel" aria-hidden="true">
+        <div class="ai-header">
+            <div>
+                <span class="ai-kicker">PORTFOLIO ASSISTANT</span>
+                <h3>Naufal AI</h3>
+                <small><span class="ai-status-dot"></span> Local TensorFlow model</small>
+            </div>
+            <button id="closeAi" class="ai-close" type="button" aria-label="Close AI">&times;</button>
+        </div>
+
+        <div id="chat" class="ai-chat"></div>
+
+        <div class="ai-suggestions">
+            <button type="button">What projects does Naufal have?</button>
+            <button type="button">What is Naufal's experience?</button>
+            <button type="button">What tech stack does he use?</button>
+            <button type="button">How can I contact Naufal?</button>
+        </div>
+
+        <form id="aiForm" class="ai-form">
+            <input id="aiInput" type="text" autocomplete="off" placeholder="Ask about Naufal..." aria-label="Ask Naufal AI">
+            <button type="submit" aria-label="Send question"><i class="fas fa-arrow-up"></i></button>
+        </form>
+        <div class="ai-note">AI runs in your browser. No question is sent to an AI API.</div>
+    </aside>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -482,6 +515,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <script src="ai/dataset.js"></script>
+    <script src="ai/ai.js"></script>
 
     <script src="script.js"></script>
 </body>
