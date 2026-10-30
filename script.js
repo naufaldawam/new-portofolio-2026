@@ -34,32 +34,35 @@ interactives.forEach(el => {
     });
 });
 
-/* ===== DRAG TO SCROLL FOR PORTFOLIO (Optional Enhance) ===== */
-const slider = document.querySelector('.portfolio-grid');
-let isDown = false;
-let startX;
-let scrollLeft;
+/* ===== PORTFOLIO CATEGORY FILTERS ===== */
+const portfolioFilters = document.querySelectorAll(".portfolio-filters .filter-btn");
+const portfolioCards = document.querySelectorAll(".portfolio-card");
 
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.style.cursor = 'grabbing';
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.style.cursor = 'auto';
-});
-slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.style.cursor = 'auto';
-});
-slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2; // Scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
+function filterPortfolio(category) {
+    portfolioFilters.forEach(btn => {
+        const isActive = btn.dataset.filter === category;
+        btn.classList.toggle("active", isActive);
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+
+    portfolioCards.forEach(card => {
+        const show = category === "all" || card.dataset.category === category;
+        if (show) {
+            card.classList.remove("card-fading");
+            card.classList.remove("card-hidden");
+        } else {
+            card.classList.add("card-fading");
+            clearTimeout(card._hideTimer);
+            card._hideTimer = setTimeout(() => {
+                card.classList.remove("card-fading");
+                card.classList.add("card-hidden");
+            }, 260);
+        }
+    });
+}
+
+portfolioFilters.forEach(btn => {
+    btn.addEventListener("click", () => filterPortfolio(btn.dataset.filter));
 });
 
 

@@ -269,11 +269,19 @@
     <section id="portfolio" class="portfolio">
         <h2 class="section-title" data-aos="fade-up">Featured <span>Works</span></h2>
 
-        <!-- Scrolling Wrapper -->
+        <!-- Category Filters -->
+        <div class="portfolio-filters" data-aos="fade-up">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+            <button type="button" class="filter-btn" data-filter="backend" aria-pressed="false">Backend &amp; API</button>
+            <button type="button" class="filter-btn" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+
+        <!-- Filterable Grid -->
         <div class="portfolio-grid" data-aos="fade-up">
 
             <!-- Project 1 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="tools" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-info" style="padding-top: 10px;">
                     <span class="date"
                         style="display:inline-block; padding: 4px 12px; background: rgba(16, 185, 129, 0.2); color: #10b981; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Go
@@ -286,7 +294,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="web" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-info" style="padding-top: 10px;">
                     <span class="date"
                         style="display:inline-block; padding: 4px 12px; background: rgba(14, 165, 233, 0.2); color: var(--primary-color); border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Staging
@@ -299,7 +307,7 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="web" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-info" style="padding-top: 10px;">
                     <span class="date"
                         style="display:inline-block; padding: 4px 12px; background: rgba(14, 165, 233, 0.2); color: var(--primary-color); border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Staging
@@ -312,7 +320,7 @@
             </div>
 
             <!-- Project 4 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="web" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-info" style="padding-top: 10px;">
                     <span class="date"
                         style="display:inline-block; padding: 4px 12px; background: rgba(16, 185, 129, 0.2); color: #10b981; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">Go
@@ -325,7 +333,7 @@
             </div>
 
             <!-- Project 5 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="tools" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-info" style="padding-top: 10px;">
                     <span class="date"
                         style="display:inline-block; padding: 4px 12px; background: rgba(245, 158, 11, 0.2); color: #f59e0b; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;">On
@@ -339,7 +347,7 @@
             </div>
 
             <!-- Project 6 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="web" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-img">
                     <!-- note untuk diri sendiri, oneerror -->
                     <img src="https://ik.imagekit.io/naufal/update_cv/mrt_proj_k4ILUGz6U.png?updatedAt=1718071722975"
@@ -356,7 +364,7 @@
             </div>
 
             <!-- Project 7 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="backend" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-img">
                     <img src="https://ik.imagekit.io/naufal/update_cv/bdki_syar_proj_Z5s66g3BW.png?updatedAt=1718071717509"
                         alt="ZISWAF"
@@ -372,7 +380,7 @@
             </div>
 
             <!-- Project 8 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="web" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-img">
                     <img src="https://ik.imagekit.io/naufal/update_cv/mola_proj_JZ43D4_pa.png?updatedAt=1718071718786"
                         alt="Mola Tv"
@@ -388,7 +396,7 @@
             </div>
 
             <!-- Project 9 -->
-            <div class="portfolio-card glass-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+            <div class="portfolio-card glass-card" data-category="web" data-tilt data-tilt-max="15" data-tilt-speed="400">
                 <div class="card-img">
                     <img src="https://ik.imagekit.io/naufal/update_cv/ciks_proj_v0atbTHAc.png?updatedAt=1718071718727"
                         alt="CV Cipta"
