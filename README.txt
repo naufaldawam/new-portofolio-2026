@@ -1,5 +1,7 @@
 # Naufal Dawam Dzikrilah - Portfolio Website 2k26
 
+Link code on github : https://github.com/naufaldawam/new-portofolio-2026.git
+
 Website portofolio interaktif berbasis web modern yang dirancang untuk menampilkan profil, perjalanan karier, *tech stack*, serta daftar proyek/karya (*featured works*) dengan efek animasi yang halus dan desain bergaya *cyber/neon glassmorphism*.
 
 ## Teknologi & Library yang Digunakan
