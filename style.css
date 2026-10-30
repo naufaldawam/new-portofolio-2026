@@ -1172,6 +1172,17 @@ footer {
     box-shadow: 0 0 35px rgba(14, 165, 233, .55), 0 0 70px rgba(139, 92, 246, .25);
 }
 
+/* Hide the floating launcher (orb, core ring, glow and label) while the
+   chatbot panel is open so it cannot overlap the interface or catch clicks */
+.ai-orb.orb-hidden,
+.ai-orb.orb-hidden .ai-orb-core,
+.ai-orb.orb-hidden .ai-orb-label {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(6px) scale(0);
+}
+
 .ai-orb-core {
     width: 42px;
     height: 42px;
@@ -1284,6 +1295,22 @@ footer {
     background: #22c55e;
     box-shadow: 0 0 8px #22c55e;
     margin-right: 5px;
+}
+
+.ai-status-dot.busy {
+    background: #f59e0b;
+    box-shadow: 0 0 8px #f59e0b;
+    animation: aiStatusPulse 1.2s ease-in-out infinite;
+}
+
+.ai-status-dot.ready {
+    background: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+}
+
+.ai-form input:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
 }
 
 .ai-close {
@@ -1465,6 +1492,18 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes aiStatusPulse {
+
+    0%,
+    100% {
+        opacity: 0.35;
+    }
+
+    50% {
+        opacity: 1;
     }
 }
 

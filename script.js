@@ -103,8 +103,13 @@ particlesJS("particles-js", {
 });
 
 /* ===== TYPED.JS ===== */
+var rolesAttr = document.querySelector(".typed-text");
+var roleStrings = ["Backend Developer.", "Software Engineer.", "Problem Solver."];
+if (rolesAttr && rolesAttr.getAttribute("data-roles")) {
+    roleStrings = rolesAttr.getAttribute("data-roles").split("|").map(function (r) { return r.trim(); }).filter(Boolean);
+}
 var typed = new Typed('.typed-text', {
-    strings: ["Backend Developer.", "Software Engineer.", "Problem Solver."],
+    strings: roleStrings,
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 1500,
@@ -242,16 +247,48 @@ function closeModal() {
     const aiInput = document.getElementById("aiInput");
     const aiForm = document.getElementById("aiForm");
     const suggestions = document.querySelectorAll(".ai-suggestions button");
+    const aiStatusText = document.getElementById("aiStatusText");
+    const aiStatusDot = document.getElementById("aiStatusDot");
 
     if (!aiOrb || !aiPanel || !window.portfolioAI) return;
+
+    const AI_GREETING = "Hi, I'm Naufal AI. I've read this website so I can tell you about projects, experience, skills, education, and contact details.";
+
+    let aiReady = false;
+    let pendingWaitNote = null;
+
+    function applyStatus(text, ready) {
+        aiReady = !!ready;
+        if (aiStatusText) aiStatusText.textContent = text || "";
+        if (aiStatusDot) {
+            aiStatusDot.classList.toggle("ready", aiReady);
+            aiStatusDot.classList.toggle("busy", !aiReady);
+        }
+        if (aiInput) aiInput.disabled = !aiReady;
+        if (aiReady && pendingWaitNote) {
+            const bubble = pendingWaitNote.querySelector(".ai-bubble");
+            if (bubble) bubble.innerHTML = AI_GREETING;
+            pendingWaitNote = null;
+        }
+    }
+
+    window.portfolioAI.onStatus = applyStatus;
+    if (typeof window.portfolioAI.statusText === "string") {
+        applyStatus(window.portfolioAI.statusText, window.portfolioAI.ready);
+    }
 
     function openAI() {
         aiPanel.classList.add("open");
         aiBackdrop.classList.add("open");
         aiPanel.setAttribute("aria-hidden", "false");
+        aiOrb.classList.add("orb-hidden");
 
         if (!chat.children.length) {
-            addAI("Hi, I'm Naufal AI. Ask me about projects, experience, skills, or contact details.");
+            if (aiReady) {
+                addAI(AI_GREETING);
+            } else {
+                pendingWaitNote = addAI("I'm still scanning this website so I can answer questions about Naufal. One moment please...");
+            }
         }
 
         setTimeout(() => aiInput.focus(), 180);
@@ -261,6 +298,7 @@ function closeModal() {
         aiPanel.classList.remove("open");
         aiBackdrop.classList.remove("open");
         aiPanel.setAttribute("aria-hidden", "true");
+        aiOrb.classList.remove("orb-hidden");
     }
 
     function addAI(text, result = null) {
@@ -282,6 +320,7 @@ function closeModal() {
 
         chat.appendChild(item);
         chat.scrollTop = chat.scrollHeight;
+        return item;
     }
 
     function addUser(text) {
